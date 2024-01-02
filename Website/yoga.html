@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga Classes - Fitness Club</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Fitness Club - Yoga Classes</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Classes.html">Classes</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="trainers">
+            <div class="container">
+                <h2>Yoga Trainers and Pricing</h2>
+                
+                <div class="trainer">
+        <h3>Trainer 1</h3>
+        <p>Experience: 10 years</p>
+        <p>Price Range: P2,500/month</p>
+        <button onclick="purchase('Trainer 1', 'P2,500/month')">Buy</button>
+    </div>
+
+    <div class="trainer">
+        <h3>Trainer 2</h3>
+        <p>Experience: 8 years</p>
+        <p>Price Range: P2,000/month</p>
+        <button onclick="purchase('Trainer 2', 'P2,000/month')">Buy</button>
+    </div>
+
+    <div class="trainer">
+        <h3>Trainer 3</h3>
+        <p>Experience: 5 years</p>
+        <p>Price Range: P1,800/month</p>
+        <button onclick="purchase('Trainer 3', 'P1,800/month')">Buy</button>
+    </div>
+
+    </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Designed by: Sumangil, Joselito, Jr. M.</p>
+        </div>
+    </footer>
+    <script>
+        function purchase(trainerName, price) {
+            if (confirm(`Are you sure you want to buy ${trainerName} for ${price}?`)) {
+                alert(`You have successfully purchased ${trainerName} for ${price}. Thank you for subscribing for 1 month!`);
+            } else {
+                alert('Purchase cancelled.');
+            }
+        }
+    </script>
+</body>
+
+</html>
